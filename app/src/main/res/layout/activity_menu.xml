@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF02C4E9"
+        android:text="HealthyU"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFFFFFFF"
+        android:id="@+id/headerTextView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle"/>
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/profile"
+        android:id="@+id/profileButton"
+        android:onClick="onProfileClick"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Log Meals"
+        android:textColor="#FFFFFF"
+        android:background="#FF92D14F"
+        android:id="@+id/logMealsButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logActivityButton"
+        android:layout_alignLeft="@+id/logActivityButton"
+        android:layout_alignStart="@+id/logActivityButton"
+        android:onClick="onLogMealsClick"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Statistics"
+        android:textColor="#FFFFFF"
+        android:background="#FF92D14F"
+        android:id="@+id/statsButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logMealsButton"
+        android:layout_alignLeft="@+id/logMealsButton"
+        android:layout_alignStart="@+id/logMealsButton"
+        android:onClick="onStatisticsClick"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Compete"
+        android:textColor="#FFFFFF"
+        android:background="#FF92D14F"
+        android:id="@+id/competeButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/statsButton"
+        android:layout_alignLeft="@+id/statsButton"
+        android:layout_alignStart="@+id/statsButton"
+        android:onClick="onCompeteClick"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/quoteHeader"
+        android:text="Placeholder"
+        android:textColor="#FF02C4E9"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/quoteTextView" />
+
+    <TextView
+        android:textColor="#FF02C4E9"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:text="Quote Of The Day:"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/feedbackButton"
+        android:layout_alignLeft="@+id/quoteTextView"
+        android:layout_alignStart="@+id/quoteTextView"
+        android:id="@+id/quoteHeader" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Log Activity"
+        android:textColor="#FFFFFF"
+        android:background="#FF92D14F"
+        android:id="@+id/logActivityButton"
+        android:layout_marginTop="26dp"
+        android:onClick="onLogActivityClick"
+        android:layout_below="@+id/headerTextView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Feedback"
+        android:textColor="#FFFFFF"
+        android:background="#FF92D14F"
+        android:id="@+id/feedbackButton"
+        android:layout_marginTop="18dp"
+        android:onClick="onFeedbackClick"
+        android:layout_below="@+id/competeButton"
+        android:layout_alignLeft="@+id/competeButton"
+        android:layout_alignStart="@+id/competeButton" />
+</RelativeLayout>

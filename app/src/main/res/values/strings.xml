@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HealthyU</string>
+
+    <array name="quotes">
+        <item>“The last three or four reps is what makes the muscle grow. This area of pain divides the champion from someone else who is not a champion.”</item>
+        <item>“You shall gain, but you shall pay with sweat, blood, and vomit.”</item>
+        <item>“There’s no secret formula. I lift heavy, work hard, and aim to be the best.”</item>
+        <item>“If something stands between you and your success, move it. Never be denied.”</item>
+        <item>“There comes a certain point in life when you have to stop blaming other people for how you feel or the misfortunes in your life. You can’t go through life obsessing about what might have been.”</item>
+    </array>
+
+    <array name="activities">
+        <item>"Basketball"</item>
+        <item>"Bowling"</item>
+        <item>"Cycling"</item>
+        <item>"Dancing</item>
+        <item>"Gardening"</item>
+        <item>"Golf"</item>
+        <item>"Hiking"</item>
+        <item>"Jogging"</item>
+        <item>"Running"</item>
+        <item>"Sitting"</item>
+        <item>"Skating"</item>
+        <item>"Skiing"</item>
+        <item>"Swimming"</item>
+        <item>"Tennis"</item>
+        <item>"Walking"</item>
+        <item>"Weight Training"</item>
+    </array>
+</resources>

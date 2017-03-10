@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.healthyu.healthyu.HomeActivity"
+    android:background="#FFFFFFFF">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:layout_below="@+id/loginInageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:id="@+id/loginButton"
+        android:background="#FF92D14f"
+        android:onClick="onLoginClick"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/registerButton"
+        android:background="#FF92D14f"
+        android:onClick="onRegisterClick"/>
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/splash"
+        android:id="@+id/loginInageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
