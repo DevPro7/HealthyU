@@ -67,9 +67,10 @@
         android:layout_alignStart="@+id/statsButton"
         android:onClick="onCompeteClick"/>
 
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="20dp"
@@ -82,10 +83,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/quoteTextView" />
-
+/]
     <TextView
         android:textColor="#FF02C4E9"
-        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="30dp"
         android:text="Quote Of The Day:"
         android:layout_width="match_parent"

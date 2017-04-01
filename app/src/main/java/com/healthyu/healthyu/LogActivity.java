@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 /**
  * Created by Marina on 3/9/2017.
@@ -21,6 +21,9 @@ public class LogActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log);
+
+        TextView mTextView = (TextView) findViewById(R.id.textView);
+        mTextView.setText(My_Time.date_time());
 
         activities = (Spinner) findViewById(R.id.activitiesSpinner);
         durationEditText = (EditText) findViewById(R.id.durationEditText);

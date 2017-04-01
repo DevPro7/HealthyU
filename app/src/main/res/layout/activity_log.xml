@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFFFF">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date PlaceHolder"
+        android:layout_margin="15dp"
+        android:hint="1/3 11:30 AM"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:background="@color/colorGreen"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:id="@+id/textView"
-        android:textColor="#FF000000"/>
+        />
 
     <EditText
+        android:layout_margin="15dp"
         android:hint="Duration"
-        android:layout_width="100dp"
-        android:layout_height="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:background="#b692D14F"
         android:inputType="number"
         android:layout_below="@+id/activitiesSpinner"
@@ -23,18 +30,9 @@
         android:layout_marginTop="21dp"
         android:id="@+id/durationEditText" />
 
-    <Spinner
-        android:background="#b692D14F"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:spinnerMode="dropdown"
-        android:layout_marginTop="35dp"
-        android:id="@+id/activitiesSpinner"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-    </Spinner>
-
     <Button
+        android:layout_margin="15dp"
+        android:background="@color/colorBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
@@ -43,5 +41,36 @@
         android:layout_below="@+id/durationEditText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="onSubmitClick"/>
+        android:onClick="onSubmitClick"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_margin="15dp"
+        android:background="@color/colorGreen"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="21dp"
+        android:id="@+id/activitiesSpinner"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </Spinner>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/activity"
+
+        android:id="@+id/imageView2"
+        android:layout_alignBottom="@+id/durationEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="27dp"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:background="@drawable/activity" />
+
+
 </RelativeLayout>
