@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFFFF">
 
     <TextView
-        android:layout_margin="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+
+
         android:hint="1/3 11:30 AM"
         android:textColor="@color/colorWhite"
         android:gravity="center_vertical"
@@ -15,45 +21,83 @@
         android:id="@+id/textView"
         />
 
+<TableRow>
+    <Spinner
+        android:layout_margin="5dp"
+        android:background="@color/colorGreen"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        android:id="@+id/vegiSpinner"
+       >
+    </Spinner>
+
+    <ImageView
+        android:gravity="center_vertical"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/veg"
+        android:id="@+id/vegiView"
+        android:background="@drawable/veg" />
+</TableRow>
+
+    <TableRow>
     <EditText
-        android:layout_margin="15dp"
-        android:hint="Gramms"
+        android:layout_margin="5dp"
+        android:hint="Amount grams"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:background="#b692D14F"
         android:inputType="number"
-        android:layout_below="@+id/activitiesSpinner"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="21dp"
-        android:id="@+id/amountEditText" />
+        android:id="@+id/vegiEditText" />
+
+
+    </TableRow>
+    <TableRow>
+        <Spinner
+            android:layout_margin="5dp"
+            android:background="@color/colorGreen"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:id="@+id/mealSpinner"
+            >
+        </Spinner>
+
+        <ImageView
+            android:gravity="center_vertical"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/fruit"
+            android:id="@+id/imageView3"
+            android:background="@drawable/fruit" />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_margin="5dp"
+            android:hint="Amount grams"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#b692D14F"
+            android:inputType="number"
+            android:id="@+id/amountEditText" />
+
+
+    </TableRow>
+
 
     <Button
-        android:layout_margin="15dp"
+        android:layout_margin="5dp"
         android:background="@color/colorBlue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginTop="58dp"
-        android:id="@+id/button"
-        android:layout_below="@+id/durationEditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="onSubmitClick"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Spinner
-        android:layout_margin="15dp"
-        android:background="@color/colorGreen"
-        android:layout_width="200dp"
+        android:layout_width="40dp"
         android:layout_height="40dp"
-        android:spinnerMode="dropdown"
-        android:layout_marginTop="21dp"
-        android:id="@+id/mealSpinner"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-    </Spinner>
-</RelativeLayout>
+        android:text="Add"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button" />
+</TableLayout>
