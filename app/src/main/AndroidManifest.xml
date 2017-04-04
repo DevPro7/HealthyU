@@ -34,11 +34,6 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"
             >
         </activity>
-        <activity android:name=".ProfileActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            >
-        </activity>
         <activity android:name=".CompeteActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
@@ -60,6 +55,10 @@
             >
         </activity>
         <activity android:name=".StatisticsActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name=".AccountProfileActivity"
             android:screenOrientation="portrait"
             >
         </activity>

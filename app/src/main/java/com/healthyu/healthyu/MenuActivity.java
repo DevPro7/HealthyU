@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -32,7 +30,7 @@ public class MenuActivity extends Activity {
     }
 
     public void onProfileClick(View v) {
-        Intent intent = new Intent(this, ProfileActivity.class);
+        Intent intent = new Intent(this, AccountProfileActivity.class);
         startActivity(intent);
     }
     public void onLogActivityClick(View v) {

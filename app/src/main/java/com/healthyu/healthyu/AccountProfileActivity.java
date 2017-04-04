@@ -4,13 +4,15 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * Created by Marina on 3/9/2017.
+ * Created by Daniel on 4/4/17.
  */
 
-public class ProfileActivity extends Activity {
+public class AccountProfileActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_account_settings);
     }
+
 }
