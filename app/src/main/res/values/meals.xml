@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="meals_Fruits">
+        <item>"Apple"</item>
+        <item>"Banana"</item>
+        <item>"Blackberries"</item>
+        <item>"Cherry</item>
+        <item>"Cucumber"</item>
+        <item>"Dates"</item>
+        <item>"Grapes"</item>
+        <item>"Grapefruit"</item>
+        <item>"Kiwi"</item>
+        <item>"Melon"</item>
+        <item>"Peach"</item>
+        <item>"Pear"</item>
+        <item>"Tomato"</item>
+       </array>
+    <array name="meals_Vegi">
+        <item>"Beans"</item>
+        <item>"Broccoli"</item>
+        <item>"Cabbage"</item>
+        <item>"Carrot"</item>
+        <item>"Cauliflower"</item>
+        <item>"Celery"</item>
+        <item>"Cucumber"</item>
+        <item>"Leek"</item>
+        <item>"Lentils"</item>
+        <item>"Lettuce"</item>
+    </array>
+
+    <array name="meals_meats">
+        <item>"Bacon "</item>
+        <item>"Beef (roast)"</item>
+        <item>"Beef burgers "</item>
+        <item>"Chicken"</item>
+        <item>"Cod fresh"</item>
+        <item>"Duck roast"</item>
+        <item>"Fish cake"</item>
+        <item>"Fish fingers"</item>
+        <item>"Lamb (roast)"</item>
+        <item>"Pork"</item>
+        <item>"Tuna tinned water"</item>
+        <item>"Lobster boiled"</item>
+        <item>"Turkey"</item>
+        <item>"Veal"</item>
+        </array>
+    <array name="meals_meats_cal">
+        <item>"500"</item>
+        <item>"280"</item>
+        <item>"280"</item>
+        <item>"200"</item>
+        <item>"100"</item>
+        <item>"430"</item>
+        <item>"200"</item>
+        <item>"220"</item>
+        <item>"240"</item>
+        <item>"300"</item>
+        <item>"100"</item>
+        <item>"290"</item>
+        <item>"100"</item>
+        <item>"1000"</item>
+    </array>
+
+
+    <array name="meals_grains">
+        <item>"Bagel"</item>
+        <item>"Bread white"</item>
+        <item>"Bread whole-wheat "</item>
+        <item>"Cornflakes"</item>
+        <item>"Cream crackers"</item>
+        <item>"Rice (white)"</item>
+        <item>"Rice (Brown)"</item>
+        <item>"Spaghetti (boiled)"</item>
+    </array>
+
+    <array name="meals_grains_cal">
+        <item>"310"</item>
+        <item>"240"</item>
+        <item>"220"</item>
+        <item>"370"</item>
+        <item>"440"</item>
+        <item>"140"</item>
+        <item>"135"</item>
+        <item>"101"</item>
+    </array>
+
+    <array name="meals_dairy">
+        <item>"Cheese average"</item>
+        <item>"Cheddar "</item>
+        <item>"Cottage cheese low fat"</item>
+        <item>"Cottage cheese"</item>
+        <item>"Cream cheese"</item>
+        <item>"Ice cream"</item>
+        <item>"Milk whole"</item>
+        <item>"Milk semi-skimmed"</item>
+        <item>"Milk skimmed"</item>
+        <item>"Milk Soya"</item>
+        <item>"Yogurt natural"</item>
+        <item>"Yogurt reduced fat"</item>
+    </array>
+
+    <array name="meals_dairy_cal">
+        <item>"440"</item>
+        <item>"260"</item>
+        <item>"80"</item>
+        <item>"98"</item>
+        <item>"428"</item>
+        <item>"180"</item>
+        <item>"70"</item>
+        <item>"50"</item>
+        <item>"38"</item>
+        <item>"36"</item>
+        <item>"60"</item>
+        <item>"45"</item>
+      </array>
+
+
+
+
+
+
+
+
+
+
+</resources>
