@@ -75,8 +75,8 @@ public class LogActivity extends Activity {
             Integer intDuration = Integer.parseInt(duration);
             putKey("MaxCal",duration);
             ///stores max values
-            getValue("MaxCal");
-            updateKey("MaxCal","2000");
+          //  getValue("MaxCal");
+            updateKey("MaxCal",duration);
 
         }
 
