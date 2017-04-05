@@ -1,6 +1,7 @@
 package com.healthyu.healthyu;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -42,28 +43,7 @@ public class LogActivity extends Activity {
         activities.setAdapter(adapter);
     }
 
-    public void putKey(String key, String value) {
-        //set value
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(key, value);
-        editor.commit();
-    }
 
-    public String getValue(String key) {
-
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        return sharedPreferences.getString(key, "DEFAULT");
-    }
-
-    public void updateKey(String key, String newvalue)
-    {//not working
-        SharedPreferences mypref = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor prefsEditr = mypref.edit();
-        prefsEditr.putString(key, newvalue);
-        prefsEditr.apply();
-   }
 
     public void showTotal(View v) {
         /*
@@ -71,18 +51,21 @@ public class LogActivity extends Activity {
          */
         durationEditText = (EditText) findViewById(R.id.durationEditText);
         String duration = durationEditText.getText().toString();
+
         if (!(duration.isEmpty())) {
             Integer intDuration = Integer.parseInt(duration);
-            putKey("MaxCal",duration);
-            ///stores max values
-          //  getValue("MaxCal");
-            updateKey("MaxCal",duration);
+           ///stores values to Preferencess
+           Util.putKey("MaxCal",duration,PreferenceManager.getDefaultSharedPreferences(this));
+           //
+            Util.getValue("MaxCal",PreferenceManager.getDefaultSharedPreferences(this));
+
 
         }
 
 
        final TextView maxTextView = (TextView) findViewById(R.id.textViewMaXCal);
-       maxTextView.setText(getValue("MaxCal"));
+       maxTextView.setText(Util.getValue("MaxCal",PreferenceManager.getDefaultSharedPreferences(this)));
+
 
     }
 }
