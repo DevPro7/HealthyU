@@ -9,6 +9,7 @@
     </array>
 
     <array name="activities">
+        <item>"Select"</item>
         <item>"Basketball"</item>
         <item>"Bowling"</item>
         <item>"Cycling"</item>
@@ -26,6 +27,28 @@
         <item>"Walking"</item>
         <item>"Weight Training"</item>
     </array>
+    <!--average for 140 cal/min-->
+    <array name="activities_cal">
+        <item>"0"</item>
+        <item>"8.8"</item>
+        <item>"1.4"</item>
+        <item>"6.4"</item>
+        <item>"8.6"</item>
+        <item>"5.0"</item>
+        <item>"4.6"</item>
+        <item>"5.2"</item>
+        <item>"10.8"</item>
+        <item>"13.2"</item>
+        <item>"1.3"</item>
+        <item>"6.9"</item>
+        <item>"6.6"</item>
+        <item>"9.0"</item>
+        <item>"6.9"</item>
+        <item>"7.6"</item>
+        <item>"7.6"</item>
+    </array>
+    <string name = "min_label">Minutes </string>
+    <string name = "activity_label">Activity</string>
     <string name = "userName">Name </string>
     <string name = "calBurned"> Calories burned </string>
     <string name = "calIntake"> Calories intake </string>

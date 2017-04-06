@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Marina on 3/9/2017.
@@ -14,11 +15,11 @@ import android.widget.TextView;
 
 public class LogMealsActivity extends Activity {
 
-    Spinner fruits;
+    Spinner fruitsSpinner;
     EditText amountEditText;
 
 
-    Spinner vegi;
+    Spinner vegiSpinner;
     EditText amountEditTextvegi;
 
 
@@ -30,25 +31,26 @@ public class LogMealsActivity extends Activity {
 
 
         ///fruits
-        fruits = (Spinner) findViewById(R.id.mealSpinner);
+        fruitsSpinner = (Spinner) findViewById(R.id.mealSpinner);
         amountEditText = (EditText) findViewById(R.id.amountEditText);
 
         Resources res = getResources();
         String[] activitiesArray = res.getStringArray(R.array.meals_Fruits);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, activitiesArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        fruits.setAdapter(adapter);
-
-
+        fruitsSpinner.setAdapter(adapter);
+        ///Gets For fruit
+        String selectedVal = getResources().getStringArray(R.array.meals_dairy_cal)[fruitsSpinner.getSelectedItemPosition()];
+        Toast.makeText(this, selectedVal, Toast.LENGTH_SHORT).show();
         //vegi
-        vegi = (Spinner) findViewById(R.id.vegiSpinner);
+        vegiSpinner = (Spinner) findViewById(R.id.vegiSpinner);
         amountEditTextvegi = (EditText) findViewById(R.id.vegiEditText);
 
         Resources res2 = getResources();
         String[] vegiArray = res.getStringArray(R.array.meals_Vegi);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, vegiArray);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        vegi.setAdapter(adapter2);
+        vegiSpinner.setAdapter(adapter2);
        //meats
 
 
