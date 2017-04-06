@@ -36,7 +36,6 @@
 
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/veg"
         android:id="@+id/vegiView"
         android:background="@drawable/veg" />
 </TableRow>
@@ -69,31 +68,9 @@
             android:gravity="center_vertical"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/fruit"
             android:id="@+id/imageView3"
             android:background="@drawable/fruit" />
     </TableRow>
-    <TableRow>
-        <Spinner
-            android:layout_margin="5dp"
-            android:background="@color/colorGreen"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:spinnerMode="dropdown"
-            android:id="@+id/dairySpinner"
-            >
-        </Spinner>
-
-        <ImageView
-            android:gravity="center_vertical"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/fruit"
-            android:id="@+id/imageView4"
-            android:background="@drawable/fruit" />
-    </TableRow>
-
-
     <TableRow>
         <EditText
 
@@ -108,9 +85,69 @@
 
 
     </TableRow>
+    <TableRow>
+        <Spinner
+            android:layout_margin="5dp"
+            android:background="@color/colorGreen"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:id="@+id/dairySpinner">
+        </Spinner>
+        <ImageView
+            android:gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView4"
+            android:background="@drawable/dairy" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_margin="5dp"
+            android:hint="Amount grams"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#b692D14F"
+            android:inputType="number"
+            android:id="@+id/dairyEditText" />
+    </TableRow>
 
 
-    <Button
+<TableRow>
+<Spinner
+    android:layout_margin="5dp"
+    android:background="@color/colorGreen"
+    android:layout_width="200dp"
+    android:layout_height="40dp"
+    android:spinnerMode="dropdown"
+    android:id="@+id/meatsSpinner">
+</Spinner>
+<ImageView
+    android:gravity="center_vertical"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/imageView5"
+    android:background="@drawable/meat" />
+</TableRow>
+<TableRow>
+<EditText
+    android:layout_margin="5dp"
+    android:hint="Amount grams"
+    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+    android:layout_width="200dp"
+    android:layout_height="40dp"
+    android:background="#b692D14F"
+    android:inputType="number"
+    android:id="@+id/meatsEditText" />
+</TableRow>
+
+
+
+
+
+
+<Button
         android:layout_margin="5dp"
         android:background="@color/colorBlue"
         android:layout_width="40dp"

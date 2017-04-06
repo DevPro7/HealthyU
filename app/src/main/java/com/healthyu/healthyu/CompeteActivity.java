@@ -20,7 +20,7 @@ public class CompeteActivity extends Activity {
 
         TextView mTextView = (TextView) findViewById(R.id.textView1);
 
-         mTextView.setText(My_Time.date_time());
+         mTextView.setText("Today : "+ My_Time.date_time());
 
     }
 }

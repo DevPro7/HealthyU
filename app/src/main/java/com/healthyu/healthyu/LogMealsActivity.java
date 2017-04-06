@@ -22,6 +22,12 @@ public class LogMealsActivity extends Activity {
     Spinner vegiSpinner;
     EditText amountEditTextvegi;
 
+    Spinner dairySpinner;
+    EditText amountEditTextdairy;
+
+    Spinner meatsSpinner;
+    EditText amountEditTextmeats;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,11 +53,34 @@ public class LogMealsActivity extends Activity {
         amountEditTextvegi = (EditText) findViewById(R.id.vegiEditText);
 
         Resources res2 = getResources();
-        String[] vegiArray = res.getStringArray(R.array.meals_Vegi);
+        String[] vegiArray = res2.getStringArray(R.array.meals_Vegi);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, vegiArray);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         vegiSpinner.setAdapter(adapter2);
+
+        //dairy
+        dairySpinner = (Spinner) findViewById(R.id.dairySpinner);
+        amountEditTextdairy = (EditText) findViewById(R.id.dairyEditText);
+
+        Resources res3 = getResources();
+        String[] dairyArray = res3.getStringArray(R.array.meals_dairy);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, dairyArray);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dairySpinner.setAdapter(adapter3);
+
+
+
+
+
        //meats
+        meatsSpinner = (Spinner) findViewById(R.id.meatsSpinner);
+        amountEditTextmeats = (EditText) findViewById(R.id.meatsEditText);
+
+        Resources res4 = getResources();
+        String[] meatsArray = res4.getStringArray(R.array.meals_meats);
+        ArrayAdapter<String> adapter4 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, meatsArray);
+        adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        meatsSpinner.setAdapter(adapter4);
 
 
 

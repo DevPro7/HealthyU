@@ -34,7 +34,7 @@
             android:layout_height="fill_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
-            android:text="@string/min_label"
+            android:text="@string/activity_label"
             android:textColor="@color/colorPrimaryDark"
             />
     </TableRow>
@@ -58,7 +58,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
 
-            android:text="@string/activity_label"
+            android:text="@string/min_label"
             android:textColor="@color/colorPrimaryDark"
             />
     </TableRow>

@@ -32,7 +32,7 @@ public class LogActivity extends Activity {
         setContentView(R.layout.activity_log);
 
         TextView mTextView = (TextView) findViewById(R.id.textView);
-        mTextView.setText(My_Time.date_time());
+        mTextView.setText("Today : "+ My_Time.date_time());
 
         activitiesSpinner = (Spinner) findViewById(R.id.activitiesSpinner);
         durationEditText = (EditText) findViewById(R.id.durationEditText);
