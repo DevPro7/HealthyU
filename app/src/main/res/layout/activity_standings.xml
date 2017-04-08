@@ -10,55 +10,64 @@
         android:layout_height="0dp"
         android:layout_centerVertical="true"/>
     <TextView
-        android:id="@+id/activityrankingTV"
+        android:id="@+id/activityHeader"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Activity Rankings"
         android:gravity="center"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
+        android:layout_alignParentTop="true"/>
+
     <TextView
-        android:id="@+id/listheader"
+        android:id="@+id/topRankHeader"
+
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activityrankingTV"
         android:text="Rank"
         android:gravity="center"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+
+        android:layout_below="@id/activityHeader"/>
     <TextView
+        android:id="@+id/topIDHeader"
+
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activityrankingTV"
-        android:layout_toRightOf="@id/listheader"
         android:text="ID"
         android:gravity="center"
         android:textColor="#000000"
-        android:id="@+id/textView3" />
+
+        android:layout_below="@id/activityHeader"
+        android:layout_toRightOf="@id/topRankHeader"
+         />
     <TextView
+        android:id="@+id/topNameHeader"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Name"
         android:gravity="center"
         android:textColor="#000000"
-        android:layout_alignBaseline="@id/textView3"
-        android:layout_toRightOf="@id/textView3"
-        android:id="@+id/textView4" />
+
+        android:layout_alignBaseline="@id/topIDHeader"
+        android:layout_toRightOf="@id/topIDHeader"
+         />
     <TextView
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:text="Activity"
         android:gravity="center"
         android:textColor="#000000"
-        android:layout_below="@id/activityrankingTV"
+
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@id/activityHeader" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/listheader"
+        android:layout_below="@id/topRankHeader"
         android:layout_above="@id/center">
         <ListView
             android:id="@+id/activityList"
@@ -68,53 +77,63 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/activityrankTV"
+        android:id="@+id/calorieHeader"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calories Rankings"
         android:gravity="center"
-        android:layout_below="@id/center"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+
+        android:layout_below="@id/center"/>
     <TextView
-        android:id="@+id/bottomlistheader"
+        android:id="@+id/bottomRankHeader"
+
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activityrankTV"
         android:text="Rank"
         android:gravity="center"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+
+        android:layout_below="@id/calorieHeader"/>
     <TextView
+        android:id="@+id/bottomIDHeader"
+
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:text="ID"
         android:gravity="center"
         android:textColor="#000000"
-        android:id="@+id/textView6"
-        android:layout_alignBaseline="@id/bottomlistheader"
-        android:layout_toRightOf="@id/bottomlistheader" />
+
+        android:layout_alignBaseline="@id/bottomRankHeader"
+        android:layout_toRightOf="@id/bottomRankHeader" />
     <TextView
+        android:id="@+id/bottomNameHeader"
+
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Name"
         android:gravity="center"
         android:textColor="#000000"
-        android:id="@+id/textView7"
-        android:layout_below="@+id/activityrankTV"
-        android:layout_toRightOf="@id/textView6"/>
+
+        android:layout_below="@+id/calorieHeader"
+        android:layout_toRightOf="@id/bottomIDHeader"/>
+
     <TextView
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:text="Calories"
         android:gravity="center"
         android:textColor="#000000"
-        android:layout_below="@id/activityrankTV"
+
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@id/calorieHeader"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bottomlistheader">
+        android:layout_below="@+id/bottomRankHeader">
         <ListView
             android:id="@+id/calorieList"
             android:layout_width="match_parent"

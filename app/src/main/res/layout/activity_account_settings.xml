@@ -16,7 +16,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/bottomIDHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -27,12 +27,12 @@
         android:text="Top Calories: " />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/bottomNameHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView6"
+        android:layout_below="@+id/bottomIDHeader"
         android:textColor="#000000"
         android:text="Top Activity: " />
 
@@ -41,8 +41,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/account_welcome_text"
-        android:layout_toEndOf="@+id/textView6"
-        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/bottomIDHeader"
+        android:layout_toRightOf="@+id/bottomIDHeader"
         android:textColor="#000000" />
 
     <TextView
@@ -50,8 +50,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/topcal_textview"
-        android:layout_toEndOf="@+id/textView6"
-        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/bottomIDHeader"
+        android:layout_toRightOf="@+id/bottomIDHeader"
         android:textColor="#000000" />
 
 </RelativeLayout>
