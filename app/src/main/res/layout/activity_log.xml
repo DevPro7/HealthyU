@@ -57,7 +57,6 @@
             android:layout_height="fill_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
-
             android:text="@string/min_label"
             android:textColor="@color/colorPrimaryDark"
             />
@@ -77,24 +76,43 @@
     <TableRow>
     <TextView
         android:layout_margin="5dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorOrange"
         android:text="Activity Calories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
         android:id="@+id/activityCal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/totalACtivity"
+            android:textColor="@color/colorPrimaryDark"
+            />
     </TableRow>
 <TableRow>
     <TextView
         android:layout_margin="5dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorOrange"
         android:text="Total Calories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
         android:id="@+id/textViewMaXCal" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/dailyTotal"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
 </TableRow>
     <ImageView
+        android:layout_marginTop="15dp"
         android:layout_width="261dp"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
@@ -102,6 +120,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="27dp"
         android:background="@drawable/activity" />
+
 
 
 </TableLayout>

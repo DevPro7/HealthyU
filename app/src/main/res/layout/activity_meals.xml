@@ -124,11 +124,10 @@
     android:id="@+id/meatsSpinner">
 </Spinner>
 <ImageView
-    android:gravity="center_vertical"
-    android:layout_width="50dp"
     android:layout_height="50dp"
     android:id="@+id/imageView5"
-    android:background="@drawable/meat" />
+    android:background="@drawable/meat"
+    android:layout_width="50dp" />
 </TableRow>
 <TableRow>
 <EditText
@@ -146,14 +145,42 @@
 
 
 
-
+<TableRow>
 <Button
         android:layout_margin="5dp"
         android:background="@color/colorBlue"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:text="Add"
+     android:onClick="submitAllActiviyies"
         android:textColor="@color/colorWhite"
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button" />
+
+</TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_margin="5dp"
+            android:textColor="@color/colorOrange"
+            android:text="Activity Calories"
+            android:id="@+id/mealCalTotal" />
+        <TextView
+            android:text="@string/totalACtivity"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_margin="5dp"
+            android:textColor="@color/colorOrange"
+            android:text="Activity Calories"
+            android:id="@+id/dailyCalTotal" />
+        <TextView
+            android:text="@string/dailyMealTotal"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </TableRow>
+
+
 </TableLayout>
