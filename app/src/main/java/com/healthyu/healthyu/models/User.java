@@ -18,6 +18,12 @@ public class User {
     @Expose
     private Integer userId;
 
+    public User(String username, Integer activity, Integer calories, Integer id) {
+        this.friendlyName = username;
+        this.topActivity = activity;
+        this.topCalories = calories;
+        this.userId = id;
+    }
     public String getFriendlyName() {
         return friendlyName;
     }

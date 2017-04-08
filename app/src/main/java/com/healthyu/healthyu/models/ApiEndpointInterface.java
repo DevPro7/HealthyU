@@ -28,7 +28,7 @@ public interface ApiEndpointInterface {
     Call<List<User>> topCaloriesUsers();
 
     @POST("user")
-    Call<ResponseBody> posrUser(@Body User user);
+    Call<ResponseBody> postUser(@Body User user);
 
 
 }
