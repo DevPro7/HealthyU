@@ -104,7 +104,7 @@
         android:layout_toRightOf="@+id/textView6"
         android:layout_toEndOf="@+id/textView6" />
     <TextView
-        android:layout_width="80dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:text="Calories"
         android:gravity="center"

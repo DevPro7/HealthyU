@@ -140,7 +140,7 @@ public class StandingActivity extends Activity{
             vh.rank.setText(String.valueOf(position+1));
             vh.id.setText(String.valueOf(userArray.get(position).getUserId()));
             vh.name.setText(String.valueOf(userArray.get(position).getFriendlyName()));
-            vh.activity.setText(String.valueOf(userArray.get(position).getTopCalories()));
+            vh.activity.setText(String.valueOf(userArray.get(position).getTopActivity()));
 
             return convertView;
         }
@@ -199,9 +199,9 @@ public class StandingActivity extends Activity{
             }
 
             vh.rank.setText(String.valueOf(position+1));
-            vh.id.setText(String.valueOf(userArray.get(position).getUserId()));
-            vh.name.setText(String.valueOf(userArray.get(position).getFriendlyName()));
-            vh.activity.setText(String.valueOf(userArray.get(position).getTopActivity()));
+            vh.id.setText(String.valueOf(userArray2.get(position).getUserId()));
+            vh.name.setText(String.valueOf(userArray2.get(position).getFriendlyName()));
+            vh.activity.setText(String.valueOf(userArray2.get(position).getTopCalories()));
 
             return convertView;
         }
