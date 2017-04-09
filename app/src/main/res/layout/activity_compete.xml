@@ -83,7 +83,7 @@ android:weightSum="1">
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
             android:text="@string/calIntake"
-            android:gravity="left"
+            android:gravity="start"
             android:textColor="@color/colorOrange"
             android:padding="3dip" />
     </TableRow>

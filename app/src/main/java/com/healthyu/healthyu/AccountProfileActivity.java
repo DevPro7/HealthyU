@@ -19,7 +19,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 /**
- * Created by Daniel on 4/4/17.
+ * Created by Dan on 4/4/17.
  */
 
 public class AccountProfileActivity extends Activity {

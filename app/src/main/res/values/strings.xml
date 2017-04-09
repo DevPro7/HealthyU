@@ -2,10 +2,15 @@
     <string name="app_name">HealthyU</string>
 
     <array name="quotes">
-        <item>“The last three or four reps is what makes the muscle grow. This area of pain divides the champion from someone else who is not a champion.”</item>
+        <item>“The last three or four reps is what makes the muscle grow. This area of pain divides
+            the champion from someone else who is not a champion.”
+        </item>
         <item>“There’s no secret formula. I lift heavy, work hard, and aim to be the best.”</item>
         <item>“If something stands between you and your success, move it. Never be denied.”</item>
-        <item>“There comes a certain point in life when you have to stop blaming other people for how you feel or the misfortunes in your life. You can’t go through life obsessing about what might have been.”</item>
+        <item>“There comes a certain point in life when you have to stop blaming other people for
+            how you feel or the misfortunes in your life. You can’t go through life obsessing about
+            what might have been.”
+        </item>
     </array>
 
     <array name="activities">
@@ -47,19 +52,20 @@
         <item>"7.6"</item>
         <item>"7.6"</item>
     </array>
-    <string name = "min_label">Minutes </string>
-    <string name = "activity_label">Activity</string>
+    <string name="min_label">Minutes </string>
+    <string name="activity_label">Activity</string>
 
-    <string name = "userName">Name </string>
+    <string name="userName">Name </string>
 
-    <string name = "calBurned"> Calories burned </string>
-    <string name = "calIntake"> Calories intake </string>
+    <string name="calBurned"> Calories burned </string>
+    <string name="calIntake"> Calories intake </string>
 
-    <string name = "totalACtivity">Calories</string>
-    <string name = "dailyTotal">Daily Total</string>
+    <string name="totalACtivity">Calories</string>
+    <string name="dailyTotal">Daily Total</string>
 
-    <string name = "calories">Calories</string>
-    <string name = "dailyMealTotal">Today</string>
+    <string name="calories">Calories</string>
+    <string name="dailyMealTotal">Today</string>
+    <string name="title_activity_settings">Settings</string>
 
 
 </resources>
