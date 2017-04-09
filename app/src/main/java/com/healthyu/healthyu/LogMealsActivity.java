@@ -29,7 +29,7 @@ public class LogMealsActivity extends Activity {
     Spinner meatsSpinner;
     EditText amountEditTextmeats;
 
-    TextView totalCalTV;
+    TextView mealCalTV;
     TextView totalDailyCalTV;
 
 
@@ -40,14 +40,16 @@ public class LogMealsActivity extends Activity {
         mTextView.setText("Today :  " + My_Time.date_time());
 
         //totalCal
-        totalCalTV =(TextView) findViewById(R.id.mealCalTotal);
+        mealCalTV =(TextView) findViewById(R.id.mealCalTotal);
+
+
         totalDailyCalTV =(TextView) findViewById(R.id.dailyCalTotal);
 
 
         ///fruits
         fruitsSpinner = (Spinner) findViewById(R.id.mealSpinner);
         amountEditText = (EditText) findViewById(R.id.amountEditText);
-        totalCalTV =(TextView) findViewById(R.id.textViewMaXCal);
+       // totalCalTV =(TextView) findViewById(R.id.textViewMaXCal);
 
         Resources res = getResources();
         String[] activitiesArray = res.getStringArray(R.array.meals_Fruits);
@@ -105,14 +107,13 @@ public class LogMealsActivity extends Activity {
         summAll+= calcTotal(v, amountEditTextmeats, meatsSpinner ,res.getStringArray(R.array.meals_meats_cal));
 
         Toast.makeText(this, String.valueOf(summAll), Toast.LENGTH_SHORT).show();
-      //  totalCalTV.setText(String.valueOf(summAll));
-      //  totalCalTV.setText("hello");
+        mealCalTV.setText(String.valueOf(summAll));
 
-       // totalCalFoodDaily = Double.parseDouble(Util.getValue("MaxCalFood", PreferenceManager.getDefaultSharedPreferences(this))) + summAll;
 
-      //  totalCalTV.setText(String.valueOf(summAll));
-       // totalCalTV.setText("hello");
-       // totalDailyCalTV.setText(Util.getValue("MaxCalFood", PreferenceManager.getDefaultSharedPreferences(this)));
+        totalCalFoodDaily = Double.parseDouble(Util.getValue("MaxCalFood", PreferenceManager.getDefaultSharedPreferences(this))) + summAll;
+        Util.putKey("MaxCalFood", String.valueOf(totalCalFoodDaily), PreferenceManager.getDefaultSharedPreferences(this));
+
+        totalDailyCalTV.setText(Util.getValue("MaxCalFood", PreferenceManager.getDefaultSharedPreferences(this)));
 
     }
     public double calcTotal(View v,EditText amountET, Spinner foodSpinner ,String [] calories) {
