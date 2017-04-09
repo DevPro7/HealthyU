@@ -102,6 +102,7 @@ public class RegisterActivity extends Activity {
         }
         else
         {
+            Util.putKey("UserName",username,PreferenceManager.getDefaultSharedPreferences(this));
             Util.putKey(username,password,PreferenceManager.getDefaultSharedPreferences(this));
             Toast.makeText(this, "Registered " +"  " + username +  Util.getValue(username,PreferenceManager.getDefaultSharedPreferences(this)), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, MenuActivity.class);

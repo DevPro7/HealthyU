@@ -3,6 +3,7 @@ package com.healthyu.healthyu;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,7 +27,7 @@ import retrofit2.Response;
 
 public class CompeteActivity extends Activity {
 
-    TextView caloriesIntake, caloriesBurn;
+    TextView caloriesIntake, caloriesBurn,usernameTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,18 +36,31 @@ public class CompeteActivity extends Activity {
 
         caloriesIntake = (TextView) findViewById(R.id.compete_caloriesIntake);
         caloriesBurn = (TextView) findViewById(R.id.compete_caloriesBurn);
+        usernameTV=(TextView) findViewById(R.id.userName);
+        String userName =  Util.getValue("UserName", PreferenceManager.getDefaultSharedPreferences(this));
+        if(userName.equals("0"))
+        {
+            usernameTV.setText("SomeUser");
+        } else
+            {
+                usernameTV.setText(userName);     }
+        caloriesIntake.setText(Util.getValue("MaxCalFood", PreferenceManager.getDefaultSharedPreferences(this)));
+        caloriesBurn.setText(Util.getValue("MaxCal", PreferenceManager.getDefaultSharedPreferences(this)));
 
 
     }
 
     public void onCompeteClick(View v) {
+        double calBurned = Double.valueOf(caloriesBurn.getText().toString());
+        double calIntake = Double.valueOf(caloriesIntake.getText().toString());
 
-        User user = new User("TestUser", Integer.valueOf(caloriesBurn.getText().toString()), Integer.valueOf(caloriesIntake.getText().toString()), 1);
-
+        //User user = new User("TestUser", Integer.valueOf(caloriesBurn.getText().toString()), Integer.valueOf(caloriesIntake.getText().toString()), 1);
+        User user = new User(usernameTV.getText().toString(), (int)calBurned,(int)calIntake, 3);
 
         TextView mTextView = (TextView) findViewById(R.id.textView1);
 
         mTextView.setText("Today : "+ My_Time.date_time());
+
 
         ApiEndpointInterface apiService = NetworkUtils.getApiService();
         Call<ResponseBody> call = apiService.postUser(user);
