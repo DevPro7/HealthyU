@@ -54,7 +54,6 @@ public class CompeteActivity extends Activity {
         double calBurned = Double.valueOf(caloriesBurn.getText().toString());
         double calIntake = Double.valueOf(caloriesIntake.getText().toString());
 
-        //User user = new User("TestUser", Integer.valueOf(caloriesBurn.getText().toString()), Integer.valueOf(caloriesIntake.getText().toString()), 1);
         User user = new User(usernameTV.getText().toString(), (int)calBurned,(int)calIntake, 3);
 
         TextView mTextView = (TextView) findViewById(R.id.textView1);
