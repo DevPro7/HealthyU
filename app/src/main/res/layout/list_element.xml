@@ -10,35 +10,30 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="rank"
-
         android:gravity="center"/>
     <TextView
-        android:layout_marginLeft="15dp"
+     android:layout_marginLeft="15dp"
     android:layout_width="80dp"
     android:layout_height="wrap_content"
     android:text="id"
-
     android:id="@+id/idTV"
     android:gravity="center"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     />
     <TextView
+        android:layout_width="100dp"
         android:layout_marginLeft="15dp"
-
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="name"
         android:id="@+id/nameTV"
 
         android:gravity="center"
-
          />
     <TextView
-        android:layout_marginLeft="15dp"
+        android:layout_width="80dp"
+        android:layout_marginLeft="30dp"
         android:gravity="center"
-        android:textAlignment="gravity"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="calories/activity"
          android:id="@+id/dataTV"
