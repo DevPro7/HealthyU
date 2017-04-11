@@ -79,7 +79,7 @@ public class CompeteActivity extends Activity {
             }
         });
     }
-
+ //Preview of stats
     public void startStandingsActivity(View v) {
         Intent intent = new Intent(this, StandingActivity.class);
         startActivity(intent);
