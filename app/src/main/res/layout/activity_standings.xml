@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPaleGreen">
+
+    <Space
+
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/activityHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Rankings"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/topRankHeader"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Rank"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_below="@id/activityHeader"/>
+
+    <TextView
+        android:id="@+id/topIDHeader"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:layout_below="@id/activityHeader"
+        android:layout_toRightOf="@id/topRankHeader"
+         />
+
+    <TextView
+        android:id="@+id/topNameHeader"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:layout_alignBaseline="@id/topIDHeader"
+        android:layout_toRightOf="@id/topIDHeader"
+         />
+    <TextView
+        android:layout_toRightOf="@+id/topNameHeader"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Activity"
+        android:gravity="center"
+        android:textColor="#000000"
+
+
+        android:layout_below="@id/activityHeader" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topRankHeader"
+        android:layout_above="@id/center">
+
+        <ListView
+            android:id="@+id/activityList"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/calorieHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calories Rankings"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+
+        android:layout_below="@id/center"/>
+    <TextView
+        android:id="@+id/bottomRankHeader"
+
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Rank"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:layout_below="@id/calorieHeader"/>
+    <TextView
+        android:id="@+id/bottomIDHeader"
+
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:layout_alignBaseline="@id/bottomRankHeader"
+        android:layout_toRightOf="@id/bottomRankHeader" />
+    <TextView
+        android:id="@+id/bottomNameHeader"
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:layout_below="@+id/calorieHeader"
+        android:layout_toRightOf="@id/bottomIDHeader"/>
+
+    <TextView
+
+
+        android:layout_toRightOf="@+id/bottomNameHeader"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Calories"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:layout_below="@id/calorieHeader"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottomRankHeader">
+        <ListView
+            android:id="@+id/calorieList"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

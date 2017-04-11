@@ -30,7 +30,7 @@ public class MenuActivity extends Activity {
     }
 
     public void onProfileClick(View v) {
-        Intent intent = new Intent(this, AccountProfileActivity.class);
+        Intent intent = new Intent(this, UserSettings.class);
         startActivity(intent);
     }
     public void onLogActivityClick(View v) {

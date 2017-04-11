@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorOrange">#FFC107</color>
     <color name="colorGreen">#b692D14F</color>
+    <color name="colorPaleGreen"> #d9ffbc</color>
+    #d9ffbc
     <color name="colorBlue">#FF02C4E9</color>
     <color name="colorWhite">#FFFFFFFF</color>
     <color name="colorPrimaryTextBlack">#212121</color>

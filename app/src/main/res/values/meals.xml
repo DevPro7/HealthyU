@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="meals_Fruits">
+        <item>"Select"</item>
         <item>"Apple"</item>
         <item>"Banana"</item>
         <item>"Blackberries"</item>
-        <item>"Cherry</item>
-        <item>"Cucumber"</item>
+        <item>"Cherry"</item>
         <item>"Dates"</item>
         <item>"Grapes"</item>
         <item>"Grapefruit"</item>
@@ -15,7 +15,25 @@
         <item>"Pear"</item>
         <item>"Tomato"</item>
        </array>
+    <array name="meals_Fruits_Cal">
+        <item>"0"</item>
+        <item>"44"</item>
+        <item>"65"</item>
+        <item>"25"</item>
+        <item>"10"</item>
+        <item>"50"</item>
+        <item>"235"</item>
+        <item>"62"</item>
+        <item>"32"</item>
+        <item>"50"</item>
+        <item>"28"</item>
+        <item>"30"</item>
+        <item>"38"</item>
+        <item>"20"</item>
+    </array>
+
     <array name="meals_Vegi">
+        <item>"Select"</item>
         <item>"Beans"</item>
         <item>"Broccoli"</item>
         <item>"Cabbage"</item>
@@ -24,11 +42,26 @@
         <item>"Celery"</item>
         <item>"Cucumber"</item>
         <item>"Leek"</item>
-        <item>"Lentils"</item>
         <item>"Lettuce"</item>
+        <item>"Onion"</item>
+    </array>
+
+    <array name="meals_Vegi_cal">
+        <item>"0"</item>
+        <item>"80"</item>
+        <item>"32"</item>
+        <item>"20"</item>
+        <item>"25"</item>
+        <item>"30"</item>
+        <item>"10"</item>
+        <item>"10"</item>
+        <item>"20"</item>
+        <item>"15"</item>
+        <item>"25"</item>
     </array>
 
     <array name="meals_meats">
+        <item>"Select"</item>
         <item>"Bacon "</item>
         <item>"Beef (roast)"</item>
         <item>"Beef burgers "</item>
@@ -63,6 +96,7 @@
 
 
     <array name="meals_grains">
+        <item>"Select"</item>
         <item>"Bagel"</item>
         <item>"Bread white"</item>
         <item>"Bread whole-wheat "</item>
@@ -74,6 +108,7 @@
     </array>
 
     <array name="meals_grains_cal">
+        <item>"0"</item>
         <item>"310"</item>
         <item>"240"</item>
         <item>"220"</item>
@@ -85,6 +120,7 @@
     </array>
 
     <array name="meals_dairy">
+        <item>"Select"</item>
         <item>"Cheese average"</item>
         <item>"Cheddar "</item>
         <item>"Cottage cheese low fat"</item>
@@ -100,6 +136,7 @@
     </array>
 
     <array name="meals_dairy_cal">
+        <item>"0"</item>
         <item>"440"</item>
         <item>"260"</item>
         <item>"80"</item>

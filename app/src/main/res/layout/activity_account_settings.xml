@@ -5,10 +5,53 @@
     android:background="#FFFFFFFF">
 
     <TextView
+        android:id="@+id/account_welcome_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textColor="#FF000000"
         android:text="This is the accoutn settings activity"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/bottomIDHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+
+        android:layout_below="@+id/account_welcome_text"
+        android:text="Top Calories: " />
+
+    <TextView
+        android:id="@+id/bottomNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bottomIDHeader"
+        android:textColor="#000000"
+        android:text="Top Activity: " />
+
+    <TextView
+        android:id="@+id/topcal_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_welcome_text"
+        android:layout_toEndOf="@+id/bottomIDHeader"
+        android:layout_toRightOf="@+id/bottomIDHeader"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/topactivity_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topcal_textview"
+        android:layout_toEndOf="@+id/bottomIDHeader"
+        android:layout_toRightOf="@+id/bottomIDHeader"
+        android:textColor="#000000" />
 
 </RelativeLayout>

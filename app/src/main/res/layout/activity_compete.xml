@@ -4,67 +4,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFFFF">
+    android:background="#FFFFFFFF"
+    android:weightSum="1">
 
 
 android:weightSum="1">
 
-    <ImageView
-        android:layout_gravity="center"
-        android:layout_width="276dp"
-        android:layout_height="159dp"
-        android:id="@+id/imageView"
-        android:layout_margin="15dp"
-        android:background="@drawable/less_competition2"
-        android:scaleType="fitCenter" />
-    <TextView
 
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:hint="3/1 16:21"
-        android:textColor="@color/colorWhite"
-        android:layout_width="192dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:background="#b692D14F"
-        android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_margin="15dp"
+
+        android:layout_margin="5dp"
         />
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <TextView
-
-        android:text="Sporty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:text="UserName"
         android:hint="@string/userName"
-        android:textColor="@color/colorWhite"
-        android:layout_width="192dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:background="#b692D14F"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_margin="15dp"
+        android:id="@+id/userName"
+        android:layout_margin="5dp"
                 />
 
         <ImageView
             android:gravity="bottom"
             android:background="@drawable/profile_dark"
-            android:layout_height="70dp" />
+            android:layout_height="50dp"
+            android:layout_width="10dp" />
 
     </TableRow>
 
     <TableRow>
         <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:text="1000"
-            android:textColor="@color/colorWhite"
-            android:layout_width="195dp"
             android:background="#b692D14F"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:layout_margin="15dp"/>
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/compete_caloriesBurn"
+            android:layout_margin="5dp"/>
 
         <TextView
-            android:textSize="19dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
             android:text="@string/calBurned"
             android:gravity="left"
             android:textColor="@color/colorOrange"
@@ -72,21 +67,22 @@ android:weightSum="1">
     </TableRow>
     <TableRow>
         <TextView
-
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:text="700"
-            android:textColor="@color/colorWhite"
             android:background="#b692D14F"
-            android:layout_width="197dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView4"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:layout_margin="15dp"/>
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/compete_caloriesIntake"
+            android:layout_margin="5dp"/>
 
         <TextView
-            android:textSize="19dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
             android:text="@string/calIntake"
-            android:gravity="left"
-
+            android:gravity="start"
             android:textColor="@color/colorOrange"
             android:padding="3dip" />
     </TableRow>
@@ -101,12 +97,35 @@ android:weightSum="1">
         android:layout_height="wrap_content"
         android:id="@+id/button2"
         android:background="#FF02C4E9"
-        android:layout_margin="15dp" />
+        android:layout_margin="5dp"
+        android:onClick="onCompeteClick"
+        android:textColor="#FF000000"
+        />
 
     <TextView
+
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="276dp"
+        android:layout_height="59dp"
+        android:id="@+id/imageView"
+        android:layout_margin="5dp"
+        android:background="@drawable/less_competition2"
+        android:scaleType="fitCenter"
+        android:layout_weight="0.35" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Standings"
+        android:background="#FF02C4E9"
+        android:textColor="#FF000000"
+        android:onClick="startStandingsActivity"
+        />
+
 </TableLayout>
