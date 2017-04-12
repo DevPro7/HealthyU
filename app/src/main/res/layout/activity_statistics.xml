@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TableRow>
+
+        <EditText
+            android:id="@+id/amountEditText"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:hint="Username"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClick" />
+
+
+    </TableRow>
+</TableLayout>

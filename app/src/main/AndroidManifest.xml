@@ -56,7 +56,6 @@
         <activity
             android:name=".StatisticsActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".AccountProfileActivity"
             android:screenOrientation="portrait" />
@@ -64,7 +63,7 @@
             android:name=".StandingActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".models.SettingsProfileActivity" />
-        <activity android:name=".UserSettings"></activity>
+        <activity android:name=".UserSettings" />
     </application>
 
 </manifest>

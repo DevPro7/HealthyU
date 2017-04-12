@@ -1,9 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.healthyu.healthyu.UserSettings">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:id="@+id/mainLayout"
+    android:focusableInTouchMode="true" >
 
-</android.support.constraint.ConstraintLayout>
+        <TableRow>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_account_circle_black_24dp"/>
+
+
+            <EditText
+                android:id="@+id/userNameET"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="#b692D14F"
+                android:hint="Username"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_edit_black_24dp"
+                android:onClick="onEditClick" />
+
+        </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            />
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:hint="email"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButtonEmail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClickEmail" />
+
+
+    </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+           />
+
+        <EditText
+            android:id="@+id/weightET"
+            android:hint="weight"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButtonWeight"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClickWeight" />
+
+
+    </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_account_circle_black_24dp"/>
+
+
+        <EditText
+            android:id="@+id/ageET"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:hint="Age"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButtonAge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClickAge" />
+
+
+    </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:onClick="onEditClick" />
+
+        <EditText
+            android:id="@+id/userNameGoalActivity"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:hint="Goal Activity"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButtonGoalActivity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClickgoalActivity" />
+
+
+    </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:onClick="onEditClick" />
+
+        <EditText
+            android:id="@+id/goalDietET"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:hint="Goal Diet"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButtonGoalDiet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClickGoalDiet" />
+
+
+    </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:onClick="onEditClick" />
+
+        <EditText
+            android:id="@+id/dietTypeET"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:hint="Diet type"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButtondietType"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClickDietType" />
+
+
+    </TableRow>
+    <TableRow>
+        <Button
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:onClick="onEditClick" />
+
+        <EditText
+            android:id="@+id/userName1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#b692D14F"
+            android:hint="Username"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/profileButton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_edit_black_24dp"
+            android:onClick="onEditClickDietType" />
+
+
+    </TableRow>
+    </TableLayout>
+
