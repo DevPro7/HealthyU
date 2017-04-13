@@ -1,5 +1,6 @@
 package com.healthyu.healthyu;
 
+
 import android.app.Activity;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -81,7 +82,7 @@ public class UserSettings extends AppCompatActivity {
             dietTypeET.setText(Util.getValue("UserDietType", PreferenceManager.getDefaultSharedPreferences(this)));
         }
 
-        
+
 
 
 
