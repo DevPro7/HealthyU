@@ -12,7 +12,7 @@
     <color name="colorPrimaryTextBlack">#212121</color>
     <color name="colorSecondaryTextGrey">#757575</color>
     <color name="colorDividerGrey">#BDBDBD</color>
-
+    <color name="lightGrey">#00000000</color>
 
 
 </resources>

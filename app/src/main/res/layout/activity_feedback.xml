@@ -1,6 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-</LinearLayout>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    android:weightSum="1">
+    <TextView
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:text= "WORK OUT"
+        android:gravity="center_vertical"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:background="@color/colorBlue"
+        android:layout_margin="5dp"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:hint="Need/Goal met"
+            android:text="need to burn"
+            android:gravity="center_vertical"
+
+            android:layout_height="40dp"
+            android:background="#b692D14F"
+            android:id="@+id/workoutStatus"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="200"
+            android:gravity="left"
+            android:id="@+id/workoutCal"
+            android:textColor="@color/colorOrange"
+            android:padding="3dip" />
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Cal"
+            android:gravity="left"
+            android:textColor="@color/colorOrange"
+            android:padding="3dip" />
+    </TableRow>
+
+
+
+        <TextView
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Message"
+            android:gravity="left"
+            android:id="@+id/workoutMessage"
+            android:textColor="@color/colorOrange"
+            android:padding="3dip"
+            android:layout_width="200dp"
+            android:textSize="16dp"
+            android:layout_height="40dp"/>
+
+
+    <TextView
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:text= "DIET"
+        android:gravity="center_vertical"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:background="@color/colorBlue"
+        android:layout_margin="5dp"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:text="ON TRACK"
+            android:gravity="center_vertical"
+            android:height="40dp"
+            android:background="#b692D14F"
+            android:id="@+id/dietStatus"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:textSize="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="300"
+            android:gravity="left"
+            android:id="@+id/dietCal"
+            android:textColor="@color/colorOrange"
+            android:padding="3dip" />
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Cal"
+            android:gravity="left"
+            android:textColor="@color/colorOrange"
+            android:padding="3dip" />
+    </TableRow>
+
+
+
+
+        <TextView
+            android:textSize="16dp"
+
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Message"
+            android:gravity="left"
+            android:id="@+id/dietMessage"
+            android:textColor="@color/colorOrange"
+            android:padding="3dip"
+            />
+
+
+    <TextView
+        android:id="@+id/goalMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="3dip"
+
+        android:textColor="@color/colorGreen"
+        android:text="GOALS MET"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+
+</TableLayout>
