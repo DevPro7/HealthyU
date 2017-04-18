@@ -9,6 +9,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class UserSettings extends AppCompatActivity {
     EditText goalActivityET;
     EditText goalDietET;
     EditText dietTypeET;
+    EditText userIDET;
 
     View mv;
 
@@ -40,7 +42,7 @@ public class UserSettings extends AppCompatActivity {
         goalActivityET=(EditText) findViewById(R.id.userNameGoalActivity);
         goalDietET=(EditText) findViewById(R.id.goalDietET );
         dietTypeET=(EditText) findViewById(R.id.dietTypeET );
-
+        userIDET=(EditText) findViewById(R.id.userIDET );
 
 
         if (!(Util.getValue("UserName", PreferenceManager.getDefaultSharedPreferences(this))).equals("0"))
@@ -77,10 +79,105 @@ public class UserSettings extends AppCompatActivity {
 
 
 
-        if (!(Util.getValue("UserGoalDiet", PreferenceManager.getDefaultSharedPreferences(this))).equals("0"))
+        if (!(Util.getValue("UserDietType", PreferenceManager.getDefaultSharedPreferences(this))).equals("0"))
         {
             dietTypeET.setText(Util.getValue("UserDietType", PreferenceManager.getDefaultSharedPreferences(this)));
         }
+        if (!(Util.getValue("UserID", PreferenceManager.getDefaultSharedPreferences(this))).equals("0"))
+        {
+            userIDET.setText(Util.getValue("UserID", PreferenceManager.getDefaultSharedPreferences(this)));
+        }
+
+
+        userET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b = (Button) findViewById(R.id.profileButton );
+                if(hasFocus){
+                 b.setVisibility(View.VISIBLE);
+                }else {
+                    b.setVisibility(View.GONE);
+                }
+            }
+        });
+        emailET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b2 = (Button) findViewById(R.id.profileButtonEmail );
+                if(hasFocus){
+                    b2.setVisibility(View.VISIBLE);
+                }else {
+                    b2.setVisibility(View.GONE);
+                }
+            }
+        });
+        weightET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b2 = (Button) findViewById(R.id. profileButtonWeight );
+                if(hasFocus){
+                    b2.setVisibility(View.VISIBLE);
+                }else {
+                    b2.setVisibility(View.GONE);
+                }
+            }
+        });
+        ageET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b2 = (Button) findViewById(R.id.profileButtonAge);
+                if(hasFocus){
+                    b2.setVisibility(View.VISIBLE);
+                }else {
+                    b2.setVisibility(View.GONE);
+                }
+            }
+        });
+        goalActivityET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b2 = (Button) findViewById(R.id.profileButtonGoalActivity);
+                if(hasFocus){
+                    b2.setVisibility(View.VISIBLE);
+                }else {
+                    b2.setVisibility(View.GONE);
+                }
+            }
+        });
+        goalDietET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b2 = (Button) findViewById(R.id.profileButtonGoalDiet);
+                if(hasFocus){
+                    b2.setVisibility(View.VISIBLE);
+                }else {
+                    b2.setVisibility(View.GONE);
+                }
+            }
+        });
+        dietTypeET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b2 = (Button) findViewById(R.id.profileButtondietType);
+                if(hasFocus){
+                    b2.setVisibility(View.VISIBLE);
+                }else {
+                    b2.setVisibility(View.GONE);
+                }
+            }
+        });
+        userIDET.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Button b2 = (Button) findViewById(R.id.idButton);
+                if(hasFocus){
+                    b2.setVisibility(View.VISIBLE);
+
+                }else {
+                    b2.setVisibility(View.GONE);
+                }
+            }
+        });
 
 
 
@@ -150,8 +247,22 @@ public class UserSettings extends AppCompatActivity {
         hideKeyboard(v);
 
     }
+    //userId
+    public void onEditID(View v)
+    {
+        Util.putKey("UserID",userIDET.getText().toString(),PreferenceManager.getDefaultSharedPreferences(this));
+        mv.requestFocus();
+        hideKeyboard(v);
+
+    }
     public void hideKeyboard(View view) {
         InputMethodManager inputMethodManager = (InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
+    public void ResetDailyStats(View v)
+    {
+        Util.putKey("MaxCal", "0", PreferenceManager.getDefaultSharedPreferences(this));
+        Util.putKey("MaxCalFood","0", PreferenceManager.getDefaultSharedPreferences(this));
+    }
+
 }

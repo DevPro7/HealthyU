@@ -51,10 +51,11 @@ public class CompeteActivity extends Activity {
     }
 
     public void onCompeteClick(View v) {
+        int id = Integer.valueOf(Util.getValue("UserID", PreferenceManager.getDefaultSharedPreferences(this)));
         double calBurned = Double.valueOf(caloriesBurn.getText().toString());
         double calIntake = Double.valueOf(caloriesIntake.getText().toString());
 
-        User user = new User(usernameTV.getText().toString(), (int)calBurned,(int)calIntake, 3);
+        User user = new User(usernameTV.getText().toString(), (int)calBurned,(int)calIntake, id);
 
         TextView mTextView = (TextView) findViewById(R.id.textView1);
 

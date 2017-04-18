@@ -58,7 +58,7 @@ public class LogMealsActivity extends Activity {
         fruitsSpinner.setAdapter(adapter);
         ///Gets For fruit
         String selectedVal = getResources().getStringArray(R.array.meals_dairy_cal)[fruitsSpinner.getSelectedItemPosition()];
-        Toast.makeText(this, selectedVal, Toast.LENGTH_SHORT).show();
+
         //vegi
         vegiSpinner = (Spinner) findViewById(R.id.vegiSpinner);
         amountEditTextvegi = (EditText) findViewById(R.id.vegiEditText);
@@ -106,7 +106,7 @@ public class LogMealsActivity extends Activity {
         summAll+= calcTotal(v, amountEditTextdairy, dairySpinner ,res.getStringArray(R.array.meals_dairy_cal));
         summAll+= calcTotal(v, amountEditTextmeats, meatsSpinner ,res.getStringArray(R.array.meals_meats_cal));
 
-        Toast.makeText(this, String.valueOf(summAll), Toast.LENGTH_SHORT).show();
+
         mealCalTV.setText(String.valueOf(summAll));
 
 
@@ -114,6 +114,15 @@ public class LogMealsActivity extends Activity {
         Util.putKey("MaxCalFood", String.valueOf(totalCalFoodDaily), PreferenceManager.getDefaultSharedPreferences(this));
 
         totalDailyCalTV.setText(Util.getValue("MaxCalFood", PreferenceManager.getDefaultSharedPreferences(this)));
+        vegiSpinner.setSelection(0);
+        fruitsSpinner.setSelection(0);
+        meatsSpinner.setSelection(0);
+        dairySpinner.setSelection(0);
+        amountEditText.setText("");
+        amountEditTextvegi.setText("");
+        amountEditTextdairy.setText("");
+        amountEditTextmeats.setText("");
+
 
     }
     public double calcTotal(View v,EditText amountET, Spinner foodSpinner ,String [] calories) {
