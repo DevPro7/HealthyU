@@ -22,6 +22,7 @@
 
 
             <TextView
+                android:textColor="@color/colorBlue"
                 android:background="@color/lightGrey"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,6 +57,7 @@
     <TableRow>
 
         <TextView
+            android:textColor="@color/colorBlue"
             android:background="@color/lightGrey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,6 +92,7 @@
     </TableRow>
     <TableRow>
         <TextView
+            android:textColor="@color/colorBlue"
             android:background="@color/lightGrey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -123,6 +126,7 @@
     </TableRow>
     <TableRow>
         <TextView
+            android:textColor="@color/colorBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -132,6 +136,7 @@
 
 
         <EditText
+
             android:layout_weight="1"
             android:id="@+id/ageET"
             android:layout_height="40dp"
@@ -157,6 +162,7 @@
     </TableRow>
     <TableRow>
         <TextView
+            android:textColor="@color/colorBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -176,6 +182,8 @@
             android:layout_weight="1"/>
 
         <Button
+
+
             android:visibility="gone"
             android:id="@+id/profileButtonGoalActivity"
             android:layout_width="40dp"
@@ -189,7 +197,7 @@
     </TableRow>
     <TableRow>
         <TextView
-
+            android:textColor="@color/colorBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -199,6 +207,7 @@
 
 
         <EditText
+
             android:layout_weight="1"
             android:id="@+id/goalDietET"
             android:layout_height="40dp"
@@ -224,6 +233,7 @@
 
 
         <TextView
+            android:textColor="@color/colorBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -258,6 +268,7 @@
 
 
         <TextView
+            android:textColor="@color/colorBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -267,6 +278,7 @@
 
 
         <EditText
+
             android:id="@+id/userIDET"
             android:layout_weight="1"
             android:layout_height="40dp"
