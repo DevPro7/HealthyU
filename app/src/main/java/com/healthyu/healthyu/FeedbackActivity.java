@@ -77,14 +77,14 @@ public class FeedbackActivity extends Activity {
             workoutStatusTV.setBackgroundResource(R.color.colorAccent);
             workoutCal.setText(String.valueOf(goalActivity - nowActivity));
             workoutMessage.setText(" to meet the daily goal of " + String.valueOf(goalActivity) + " cal");
-            workoutMessage.setText("You met todays goal");
+            workoutMessage.setText("You met todays goal" + String.valueOf(goalActivity) + " cal");
             actGoalMet=false;
         } else {
 
             workoutStatusTV.setText("GOAL MET");
             workoutStatusTV.setBackgroundResource(R.color.colorGreen);
             workoutCal.setText(String.valueOf(nowActivity - goalActivity));
-            workoutMessage.setText("You met todays goal");
+            workoutMessage.setText("You met todays goal of" + String.valueOf(goalActivity) + " cal");
             actGoalMet=true;
 
 
@@ -103,7 +103,7 @@ public class FeedbackActivity extends Activity {
             dietStatusTV.setText("Over limit");
             dietStatusTV.setBackgroundResource(R.color.colorAccent);
             dietCal.setText(String.valueOf(nowDiet-goalDiet));
-            dietMessage.setText(" you are over the daily goal of "+ String.valueOf(goalDiet) + " cal") ;
+            dietMessage.setText(" you are over the daily goal of "+ String.valueOf(goalDiet) + " Cal") ;
             dietGoalMet=false;
         }
         else
@@ -112,7 +112,7 @@ public class FeedbackActivity extends Activity {
             dietStatusTV.setText("on track ");
             dietStatusTV.setBackgroundResource(R.color.colorGreen);
             dietCal.setText(String.valueOf(goalDiet - nowDiet));
-            dietMessage.setText("You are under the daily calories goal of" + String.valueOf(goalDiet) + " cal" ) ;
+            dietMessage.setText("You are under the daily calories goal of " + String.valueOf(goalDiet) + " Cal" ) ;
             dietGoalMet=true;
 
         }
